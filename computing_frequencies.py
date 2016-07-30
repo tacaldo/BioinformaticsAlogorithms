@@ -9,7 +9,6 @@ def computing_frequencies(text, k):  #
     for i in range(0, text_len - k):
         pattern = text[i:k + i]
         j = pattern_to_number.pattern_to_number(pattern)
-        # frequency_array[j] = int(frequency_array[j]) + 1
         frequency_array[j] += 1
 
     # last_pattern = text[i:i+k]
