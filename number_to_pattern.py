@@ -21,4 +21,4 @@ def number_to_symbol(number):  # A <- 0, C <- 1, G <- 2, T <- 3
         return 'T'
     return 0
 
-print(number_to_pattern(7023, 11))
+# print(number_to_pattern(7023, 11))
