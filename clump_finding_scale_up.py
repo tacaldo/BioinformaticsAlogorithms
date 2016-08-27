@@ -51,7 +51,6 @@ root = tk.Tk()
 root.withdraw()
 file_path = filedialog.askopenfilename()
 # f = open(file_path, 'r')
-
 result = clump_finding_scale_up(file_path, kIn, L_In, tIn)
 print(result)
 
