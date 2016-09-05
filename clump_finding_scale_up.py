@@ -22,7 +22,9 @@ def clump_finding_scale_up(genome_file_path, k, L, t):
     for i in range(0, genome_len - L + 1):  # testing here...
         # text = genome[i:i + L]
         text = f.read(L)
+        print('Start computing_frequencies...' + str(i) + ' of ' + str(genome_len))
         frequency_array = computing_frequencies.computing_frequencies(text, k)
+        print('End computing_frequnecies...' + str(i))
         f.seek(i + 1);
         for index in range(0, (4 ** k)):
             if frequency_array[index] >= t:

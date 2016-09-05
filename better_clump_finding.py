@@ -46,9 +46,12 @@ def better_clump_finding(genome_file_path, k, L, t):
 
 
 genomeIn = 'CCACGCGGTGTACGCTGCAAAAAGCCTTGCTGAATCAAATAAGGTTCCAGCACATCCTCAATGGTTTCACGTTCTTCGCCAATGGCTGCCGCCAGGTTATCCAGACCTACAGGTCCACCAAAGAACTTATCGATTACCGCCAGCAACAATTTGCGGTCCATATAATCGAAACCTTCAGCATCGACATTCAACATATCCAGCG'
-kIn = 1
-L_In = 5
-tIn = 2
+kIn = 11
+L_In = 547
+tIn = 20
+# 12 557 16
+
+
 
 # result = clump_finding(genomeIn, kIn, L_In, tIn)
 
@@ -63,3 +66,7 @@ file_path = filedialog.askopenfilename()
 
 result = better_clump_finding(file_path, kIn, L_In, tIn)
 print(result)
+print(result)
+for item in result:
+    print(item, end=' ')
+
